@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lemmesay </title>
+    <link rel="icon" type="image/x-icon" href="./images/LMS-1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="./css/venobox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+
+    <!-------- Header Section Start ---------->
+    <header class="header d-lg-block d-none">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-lg-9">
+                            <div class="header-top-item">
+                                <i class="fa-solid fa-location-dot"></i> #H - 39, #R - 7D, #S - 9, Uttara, Dhaka-1230
+                            </div>
+                            <div class="header-top-item"> <i class="fa-solid fa-phone"></i> +88 01234465272</div>
+                            <div class="header-top-item"> <i class="fa-solid fa-envelope"></i> info@lemmesaybd.com</div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="social-icon-list">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="mob-hamburger d-lg-none d-block">
+                        <a data-bs-toggle="offcanvas" href="#mobileHeaderOffcanvas" role="button"
+                            aria-controls="mobileHeaderOffcanvas">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                    <a href="index.html">
+                        <div class="header-logo">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                    </a>
+                    <div class="nav-wrapper">
+                        <ul class="header_nav">
+                            <li><a href="index.html"> Home </a></li>
+                            <li class="droppper"><a> Who We Are <i class="fa-solid fa-caret-down"></i></a>
+                                <ul class="sub_down">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="team.html">Our team</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="product.html"> All Product </a></li>
+                            <li><a href="gallary.html">Gallary</a></li>
+                            <li><a href="contact.html"> Contact Us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <!------ Mobile Offcanvas Part ------>
+     <div class="mobile-header d-lg-none d-block">
+        <div class="container">
+            <div class="mobile-header-wrapper">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                </a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                    <div class="hamburger-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start mobile-header-offcanvas" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+        aria-labelledby=" mobileHeaderOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileHeaderOffcanvasLabel">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Who We Are
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                    </ul>
+                </div>
+                <li><a href="product.html"> All Product </a></li>
+                <li><a href="gallary.html"> Gallery </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-------- Header Section End  ---------->
+
+    <!--------Common Hero Section Start --------->
+    <div class="common-hero">
+        <div class="container">
+            <div class="sec-header">
+                <h6> Product </h6>
+                <h5> See Our All Product List </h5>
+            </div>
+        </div>
+    </div>
+    <!-----------Common Hero Section End -------------->
+
+    <!-------- Team Mamber Section Start --------->
+    <div>
+        <div class="container">
+            <div class="product-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/settings.png" alt="">
+                            </div>
+                            <h4>POS Account Software</h4>
+                            <p>Here you can Update your Daily, Weekly, Monthly and Yearly sales report, Can enter
+                                unlimited product data, Stock in-Stock out Purchase. Can see Product quantity,
+                                Product expiry date and most importantly sales due.</p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/shopping.png" alt="">
+                            </div>
+                            <h4>Super Shop</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque possimus ab
+                                error nostrum esse facilis adipisci harum. </p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/shop.png" alt="">
+                            </div>
+                            <h4>Cloth Shop</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laborum molestiae
+                                id voluptates.</p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/interaction.png" alt="">
+                            </div>
+                            <h4>Stationary Management</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit facilis ea quae
+                                atque voluptas, dolore quis eos cupiditate corporis repellat dicta animi.</p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/reputation-management.png" alt="">
+                            </div>
+                            <h4>Store Management</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nemo laborum
+                                quaerat ducimus rem ut id natus tempora, explicabo eveniet vitae saepe velit. Optio
+                                at itaque, officia tempore voluptas aspernatur.</p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/relationship.png" alt="">
+                            </div>
+                            <h4>Dealership System</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse recusandae rem possimus
+                                sunt veniam natus, officiis nihil corrupti est aliquid dolor!</p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/settings.png" alt="">
+                            </div>
+                            <h4>Stock Management</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque
+                                doloremque quod sapiente est.</p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/hrm.png" alt="">
+                            </div>
+                            <h4>Payroll & HRM System</h4>
+                            <p>Here you can Update your Daily, Weekly, Monthly and Yearly sales report, Can enter
+                                unlimited product data, Stock in-Stock out Purchase. Can see Product quantity,
+                                Product expiry date and most importantly sales due.</p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/hrm.png" alt="">
+                            </div>
+                            <h4>Payroll & HRM System</h4>
+                            <p>Here you can Update your Daily, Weekly, Monthly and Yearly sales report, Can enter
+                                unlimited product data, Stock in-Stock out Purchase. Can see Product quantity,
+                                Product expiry date and most importantly sales due.</p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="product-wrap">
+                            <div class="product-shape-1">
+                                <img src="./images/p-shape-1.webp" alt="">
+                            </div>
+                            <div class="product-shape-2">
+                                <img src="./images/p-shape-2.webp" alt="">
+                            </div>
+                            <div class="product-icon">
+                                <img src="./images/hrm.png" alt="">
+                            </div>
+                            <h4>Payroll & HRM System</h4>
+                            <p>Here you can Update your Daily, Weekly, Monthly and Yearly sales report, Can enter
+                                unlimited product data, Stock in-Stock out Purchase. Can see Product quantity,
+                                Product expiry date and most importantly sales due.</p>
+                            <div class="demo-btn">
+                                <a href="#">
+                                    <div class="btn">
+                                        View here
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------- Team Mamber Section End --------->
+
+
+    <!----------- Footer Section Start  ------------>
+    <footer class="footer" id="footer">
+        <div class="footer-main-content">
+            <div class="container">
+                <div class="footer-main-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-main-wrap">
+                                <h4>Contact</h4>
+                                <div class="wrap-content">
+                                    <div>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <span> House 39, Road 7D, Sector-9, Uttara, Dhaka-1230, Bangladesh</span>
+                                </div>
+                                <div class="wrap-content">
+                                    <div>
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#"> +88 01233237536 </a></li>
+                                        <li><a href="#"> +88 01233237546 </a></li>
+                                        <li><a href="#"> +88 01233237537 </a></li>
+                                    </ul>
+                                </div>
+                                <div class="pay-numbers">
+                                    <span> Marchent Number </span>
+                                    <div class="pay-number-item">
+                                        <img src="./images/bkash.png" alt="">
+                                    </div>
+                                    <div class="pay-number-item">
+                                        <img src="./images/nagad.png" alt="">
+                                    </div>
+                                    <div class="pay-number-item">
+                                        <img src="./images/rocket.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="footer-main-wrap">
+                                <h4>Important Links</h4>
+                                <ul>
+                                    <li><a href="#"> Home </a></li>
+                                    <li><a href="#"> About </a></li>
+                                    <li><a href="#"> Feature </a></li>
+                                    <li><a href="#"> Product </a></li>
+                                    <li><a href="#"> Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="footer-main-wrap">
+                                <h4> Our Product </h4>
+                                <ul>
+                                    <li><a href="#"> qrdrive.icircles.app </a></li>
+                                    <li><a href="#"> icircles.app </a></li>
+                                    <li><a href="#"> commuinity.icircles.app </a></li>
+                                    <li><a href="#"> ikannect.app</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                            <div class="footer-main-wrap">
+                                <h4>Others</h4>
+                                <div class="qr-img">
+                                    <img src="./images/qr.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <div class="footer-bottom-wrap">
+                        <div class="footer-img">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <div class="icon-list">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <h5>Copyright © 2024 All right reserved by <span>Lemmesay BD Ltd.</span> </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------- Footer Section End  ------------>
+
+    <!------- Back to Top Button --------->
+    <a id="button-back"></a>
+
+    <!--
+     Javascript Script Linker Part
+    --------------------------------------------------->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <script src="./js/venobox.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <script src="js/custom.js"></script>
+</body>

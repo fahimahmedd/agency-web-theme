@@ -1,0 +1,58 @@
+.common-hero{
+    padding: 180px 0 0 0;
+}
+
+.common-feature{
+    padding: 20px 0 40px 0;
+    .common-feature-wrapper{
+        .common-feature-content{
+            max-width: 1100px;
+            margin: 20px auto 0;
+            background-color: #fffdf3;
+            padding: 50px 50px 30px 50px;
+            border-radius: 16px;
+            h4{
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 54px;
+            }
+
+            .feature-list{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 50%;
+                        list-style: square;
+                        font-size: 16px;
+                        color: $blackColor;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sample-feature{
+    padding-top: 100px;
+    h5{
+        font-size: 30px;
+        color: $blackColor;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+   .sample-img-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 30px;
+       img{
+           width: 100%;
+           height: auto;
+           object-fit: contain;
+       }
+   }
+}

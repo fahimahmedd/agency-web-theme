@@ -1,0 +1,163 @@
+.director{
+    background-color: #FFFDF3;
+    padding: 120px 0 100px 0;
+    margin: 80px 0 0 0;
+
+    .director-wrapper{
+        max-width: 1100px;
+        margin: 0 auto;
+        .director-section-text{
+            padding-top: 30px;
+            h4{
+                font-size: 40px;
+                color: $blackColor;
+                font-weight: 900;
+                line-height: 55px;
+                font-family: $secondaryFont;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .director-wrap{
+            margin-bottom: 80px;
+            .member-img{
+                height: 320px;
+                width: 240px;
+                position: relative;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+                .mamber-content{
+                    height: 240px;
+                    width: 260px;
+                    background-color: $whiteColor;
+                    border-radius: 16px;
+                    position: absolute;
+                    left: 220px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+                    padding: 20px;
+
+                    h5{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $blackColor;
+                        line-height: 30px;
+                        font-family: $secondaryFont;
+                    }
+                    h6{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $primaryColor;
+                        line-height: 15px; 
+                        padding-bottom: 15px;
+                    }
+                    p{
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: $textColor;
+                        @include text-ellips-3;
+                        span{
+                            color: $blackColor;
+                            font-size: 24px;
+                        }
+                    }
+
+                    .mamber-social-links{
+                        display: flex;
+                        align-items: center;
+                        i{
+                            font-size: 17px;
+                            height: 35px;
+                            width: 35px;
+                            background-color: #e5eaf0ee;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 6px;
+                            &:hover{
+                                background-color: $primaryColor;
+                                color: $whiteColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.managment-wrapper{
+    padding-top: 40px;
+    .managment-wrap{
+        height: 365px;
+        width: 100%;
+        background-color: $whiteColor;
+        overflow: hidden;
+        // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border: 1px solid $primary-border;
+        text-align: center;
+        border-radius: 18px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        position: relative;
+        &:hover{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        .managment-profile{
+            height: 200px;
+            width: 100%;
+            @include d-center;
+            background-color: #fbfbfb;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        h5{
+            font-size: 18px;
+            font-weight: 700;
+            color: $blackColor;
+            line-height: 26px;
+            font-family: $secondaryFont;
+            padding-top: 12px;
+        }
+        h6{
+            font-size: 15px;
+            font-weight: 500;
+            color: $primaryColor;
+            line-height: 15px; 
+            padding-bottom: 10px;
+        }
+        .mamber-social-links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            i{
+                font-size: 17px;
+                height: 35px;
+                width: 35px;
+                background-color: #e5eaf0ee;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 6px;
+                &:hover{
+                    background-color: $primaryColor;
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+}

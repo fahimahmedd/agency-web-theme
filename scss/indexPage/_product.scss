@@ -1,0 +1,96 @@
+.product{
+    padding: 70px 0;
+}
+
+.product-wrapper{
+    padding-top: 40px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.product-wrap{
+    height: 350px;
+    width: 100%;
+    // background-color: #4452e4;
+    border: 1px solid #e6e2e3;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 24px;
+    &:hover .product-shape-1{
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover .product-shape-2{
+        opacity: 1;
+        visibility: visible;
+    }
+    .product-shape-1{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .product-shape-2{
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    .product-icon{
+        img{
+            max-width: 50px;
+            max-height: 50px;
+            object-fit: contain;
+        }
+    }
+    h4{
+        font-size: 20px;
+        color: $blackColor;
+        font-weight: 600;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 23px;
+        @include text-ellips-4;
+        color: $textColor;
+    }
+    .demo-btn{
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        .btn{
+            font-size: 14px;
+            padding: 6px 30px;
+            border: 1px solid #b7b7b7;
+            border-radius: 35px;
+            color: #ffffff;
+            background-color: #333;
+            cursor: pointer;
+            &:hover{
+                background-color: $primaryColor;
+            }
+        }
+    }
+}

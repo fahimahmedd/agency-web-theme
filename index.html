@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lemmesay </title>
+    <link rel="icon" type="image/x-icon" href="./images/LMS-1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="./css/venobox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-------- Header Section Start ---------->
+    <header class="header d-lg-block d-none">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-lg-9">
+                            <div class="header-top-item">
+                                <i class="fa-solid fa-location-dot"></i> #H - 39, #R - 7D, #S - 9, Uttara, Dhaka-1230
+                            </div>
+                            <div class="header-top-item"> <i class="fa-solid fa-phone"></i> +88 01234465272</div>
+                            <div class="header-top-item"> <i class="fa-solid fa-envelope"></i> info@lemmesaybd.com</div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="social-icon-list">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="mob-hamburger d-lg-none d-block">
+                        <a data-bs-toggle="offcanvas" href="#mobileHeaderOffcanvas" role="button"
+                            aria-controls="mobileHeaderOffcanvas">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+                    <a href="index.html">
+                        <div class="header-logo">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                    </a>
+                    <div class="nav-wrapper">
+                        <ul class="header_nav">
+                            <li><a href="index.html"> Home </a></li>
+                            <li class="droppper"><a> Who We Are <i class="fa-solid fa-caret-down"></i></a>
+                                <ul class="sub_down">
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="team.html">Our team</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="product.html"> All Product </a></li>
+                            <li><a href="#"> Cost Calculator </a></li>
+                            <li><a href="gallary.html">Gallary</a></li>
+                            <li><a href="contact.html"> Contact Us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------ Mobile Offcanvas Part ------>
+    <div class="mobile-header d-lg-none d-block">
+        <div class="container">
+            <div class="mobile-header-wrapper">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                </a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                    <div class="hamburger-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start mobile-header-offcanvas" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" aria-labelledby=" mobileHeaderOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileHeaderOffcanvasLabel">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Who We Are
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                    </ul>
+                </div>
+                <li><a href="product.html"> All Product </a></li>
+                <li><a href="gallary.html"> Gallery </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-------- Header Section End  ---------->
+
+    <!-------- Hero Section Start ----------->
+    <div class="hero">
+        <div class="dotes_anim_bloack">
+            <div class="dots dotes_1"></div>
+            <div class="dots dotes_2"></div>
+            <div class="dots dotes_3"></div>
+            <div class="dots dotes_4"></div>
+            <div class="dots dotes_5"></div>
+            <div class="dots dotes_6"></div>
+            <div class="dots dotes_7"></div>
+            <div class="dots dotes_8"></div>
+        </div>
+        <div class="shape-1">
+            <img src="./images/alert-bg.png" alt="">
+        </div>
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h5>Welcome To </h5>
+                            <h1>The Top IT Company <br> & <span class="hero-typed"></span> </h1>
+                            <p>You should hire our expert so that you can ensure the best return on your investment.
+                                As Sherazi IT is the top it company in Bangladesh. So we can help you to boost your ROI.
+                            </p>
+                            <ul>
+                                <li> <i class="fa-solid fa-award"></i> Award Winnings </li>
+                                <li> <i class="fa-regular fa-clock"></i> 24/7 Hours Support </li>
+                                <li> <i class="fa-solid fa-code"></i> Professional Developers </li>
+                                <li> <i class="fa-regular fa-star"></i> 100% Trusted </li>
+                            </ul>
+                            <a href="tel:880113233136">
+                                <div class="hero-call">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <div class="hero-call-text">
+                                        <h5>Call to ask any question!</h5>
+                                        <h6>+88 0123456789</h6>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="hero-btn-wrapper">
+                                <div class="hero-btn active-btn">
+                                    Contact Us
+                                </div>
+                                <div class="hero-btn">
+                                    Support
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-img">
+                            <img src="./images/hero-img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------- Hero Section End ---------->
+
+    <!---------- Service Section Start ---------->
+    <section>
+        <div class="service" id="service">
+            <div class="container">
+                <div class="sec-header">
+                    <h6> Our Service</h6>
+                    <h5>Explore Our Abilities We have</h5>
+                    <p>See our one and more services. And visit the demo link to see more skills and demo works.</p>
+                </div>
+            </div>
+            <div class="service-wrappeer">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12 p-0 service-col">
+                        <div class="service-wrap">
+                            <div class="round-content">
+                                <div class="number"> <span class="counter">20</span>+ </div>
+                                <h6> High Range Of Amenities </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12 p-0 service-col">
+                        <div class="service-wrap">
+                            <div class="service-icon">
+                                <img src="./images/layers.png" alt="">
+                            </div>
+                            <a href="feature.html">
+                                <h4>Custom Software Development </h4>
+                            </a>
+                            <p>Our IT Company Will Make Any Kind Of Quality & Customized Software For Your Business.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12 p-0 service-col">
+                        <div class="service-wrap">
+                            <div class="service-icon">
+                                <img src="./images/feature-selection.png" alt="">
+                            </div>
+                            <a href="feature.html">
+                                <h4>Website Design & Development</h4>
+                            </a>
+                            <p>Make Your Brand's High-Quality, Professional With A Customized Website.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12 p-0 service-col">
+                        <div class="service-wrap">
+                            <div class="service-icon">
+                                <img src="./images/social-media.png" alt="">
+                            </div>
+                            <a href="feature.html">
+                                <h4> Digital Marketing </h4>
+                            </a>
+                            <p>Hire Our Team For Doing Your Advanced And Data-Driven Digital Marketing To Increase Your
+                                Customers </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12 p-0 service-col">
+                        <div class="service-wrap">
+                            <div class="service-icon">
+                                <img src="./images/ux-design.png" alt="">
+                            </div>
+                            <a href="feature.html">
+                                <h4>Product UI, UX Design </h4>
+                            </a>
+                            <p>We Do Ui/Ux Design For Website & Application. Your Brand Can Grow Quickly Through Our
+                                Attractive.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12 p-0 service-col">
+                        <div class="service-wrap">
+                            <div class="service-icon">
+                                <img src="./images/graphic-designer.png" alt="">
+                            </div>
+                            <a href="feature.html">
+                                <h4> Professional Graphics Design </h4>
+                            </a>
+                            <p>We Can Create More Attractive Graphics To Increase Your Brand Awareness And Your Business
+                                ROI.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12 p-0 service-col">
+                        <div class="service-wrap">
+                            <div class="service-icon">
+                                <img src="./images/application.png" alt="">
+                            </div>
+                            <a href="feature.html">
+                                <h4> Android and IOS App Development </h4>
+                            </a>
+                            <p>Our Skilled And Qualified Apps Developers Are Ready To Make Any Kind Of Mobile Apps As
+                                Per Your Needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12 p-0 service-col">
+                        <div class="service-wrap service-color">
+                            <h4>We Are Here to serve you and your business!</h4>
+                            <div class="contact-btn">
+                                Contact Us <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- Service Section End ---------->
+
+
+    <!---------- Product Section Start ---------->
+    <section>
+        <div class="product">
+            <div class="container">
+                <div class="sec-header">
+                    <h6> Our Product</h6>
+                    <h5>Explore Our Product , We Serve</h5>
+                    <p>See our one and more services. And visit the demo link to see more skills and demo works.</p>
+                </div>
+                <div class="product-wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                            <div class="product-wrap">
+                                <div class="product-shape-1">
+                                    <img src="./images/p-shape-1.webp" alt="">
+                                </div>
+                                <div class="product-shape-2">
+                                    <img src="./images/p-shape-2.webp" alt="">
+                                </div>
+                                <div class="product-icon">
+                                    <img src="./images/settings.png" alt="">
+                                </div>
+                                <h4>POS Account Software</h4>
+                                <p>Here you can Update your Daily, Weekly, Monthly and Yearly sales report, Can enter
+                                    unlimited product data, Stock in-Stock out Purchase. Can see Product quantity,
+                                    Product expiry date and most importantly sales due.</p>
+                                <div class="demo-btn">
+                                    <a href="#">
+                                        <div class="btn">
+                                            View here
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                            <div class="product-wrap">
+                                <div class="product-shape-1">
+                                    <img src="./images/p-shape-1.webp" alt="">
+                                </div>
+                                <div class="product-shape-2">
+                                    <img src="./images/p-shape-2.webp" alt="">
+                                </div>
+                                <div class="product-icon">
+                                    <img src="./images/shopping.png" alt="">
+                                </div>
+                                <h4>Super Shop</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque possimus ab
+                                    error nostrum esse facilis adipisci harum. </p>
+                                <div class="demo-btn">
+                                    <a href="#">
+                                        <div class="btn">
+                                            View here
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                            <div class="product-wrap">
+                                <div class="product-shape-1">
+                                    <img src="./images/p-shape-1.webp" alt="">
+                                </div>
+                                <div class="product-shape-2">
+                                    <img src="./images/p-shape-2.webp" alt="">
+                                </div>
+                                <div class="product-icon">
+                                    <img src="./images/shop.png" alt="">
+                                </div>
+                                <h4>Cloth Shop</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laborum molestiae
+                                    id voluptates.</p>
+                                <div class="demo-btn">
+                                    <a href="#">
+                                        <div class="btn">
+                                            View here
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                            <div class="product-wrap">
+                                <div class="product-shape-1">
+                                    <img src="./images/p-shape-1.webp" alt="">
+                                </div>
+                                <div class="product-shape-2">
+                                    <img src="./images/p-shape-2.webp" alt="">
+                                </div>
+                                <div class="product-icon">
+                                    <img src="./images/interaction.png" alt="">
+                                </div>
+                                <h4> Stationary Management </h4>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit facilis ea quae
+                                    atque voluptas, dolore quis eos cupiditate corporis repellat dicta animi.</p>
+                                <div class="demo-btn">
+                                    <a href="#">
+                                        <div class="btn">
+                                            View here
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                            <div class="product-wrap">
+                                <div class="product-shape-1">
+                                    <img src="./images/p-shape-1.webp" alt="">
+                                </div>
+                                <div class="product-shape-2">
+                                    <img src="./images/p-shape-2.webp" alt="">
+                                </div>
+                                <div class="product-icon">
+                                    <img src="./images/reputation-management.png" alt="">
+                                </div>
+                                <h4> Store Management </h4>
+                                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nemo laborum
+                                    quaerat ducimus rem ut id natus tempora, explicabo eveniet vitae saepe velit. Optio
+                                    at itaque, officia tempore voluptas aspernatur. </p>
+                                <div class="demo-btn">
+                                    <a href="#">
+                                        <div class="btn">
+                                             View here 
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                            <div class="product-wrap">
+                                <div class="product-shape-1">
+                                    <img src="./images/p-shape-1.webp" alt="">
+                                </div>
+                                <div class="product-shape-2">
+                                    <img src="./images/p-shape-2.webp" alt="">
+                                </div>
+                                <div class="product-icon">
+                                    <img src="./images/relationship.png" alt="">
+                                </div>
+                                <h4> Dealership System </h4>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse recusandae rem possimus
+                                    sunt veniam natus, officiis nihil corrupti est aliquid dolor!</p>
+                                <div class="demo-btn">
+                                    <a href="#">
+                                        <div class="btn">
+                                            View here
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                            <div class="product-wrap">
+                                <div class="product-shape-1">
+                                    <img src="./images/p-shape-1.webp" alt="">
+                                </div>         
+                                <div class="product-shape-2">
+                                    <img src="./images/p-shape-2.webp" alt="">
+                                </div>               
+                                <div class="product-icon">
+                                    <img src="./images/settings.png" alt="">
+                                </div>       
+                                <h4>Stock Management</h4>          
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque
+                                    doloremque quod sapiente est.</p>             
+                                <div class="demo-btn">                 
+                                    <a href="#">                
+                                        <div class="btn">    
+                                            View here        
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>                                      
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                     
+                        <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                            <div class="product-wrap">
+                                <div class="product-shape-1">
+                                    <img src="./images/p-shape-1.webp" alt="">
+                                </div>
+                                <div class="product-shape-2">
+                                    <img src="./images/p-shape-2.webp" alt="">
+                                </div>
+                                <div class="product-icon">
+                                    <img src="./images/hrm.png" alt="">
+                                </div>
+                                <h4>Payroll & HRM System</h4>
+                                <p>Here you can Update your Daily, Weekly, Monthly and Yearly sales report, Can enter
+                                    unlimited product data, Stock in-Stock out Purchase. Can see Product quantity,
+                                    Product expiry date and most importantly sales due.</p>
+                                <div class="demo-btn">
+                                    <a href="#">
+                                        <div class="btn">
+                                            View here
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- Product Section End ---------->
+
+    <!---------- Dark Section Start ---------->
+    <div class="dark-feature">
+        <div class="container">
+            <div class="dark-sec-header">
+                <h5>To boost your brand with <br> the best IT agency</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at quasi id molestias voluptatem est non.
+                    Similique sed, corporis nam commodi, optio reiciendis dolores tenetur totam exercitationem
+                    necessitatibus soluta dolor.</p>
+            </div>
+            <div class="dark-feature-wrapper">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-md-4 col-12">
+                        <div class="dark-feature-item">
+                            <div class="feature-cercle cercle-after">
+                                1
+                            </div>
+                            <h4>Choose Desired Services</h4>
+                            <p>Lorem ipsum dolor blanditiis debitis saepe iste in, hic iusto commodi fuga. Rerum, fugit!
+                            </p>
+                        </div>
+                    </div>               
+                    <div class="col-lg-4 col-sm-6 col-md-4 col-12">
+                        <div class="dark-feature-item">
+                            <div class="feature-cercle">
+                                2                                   
+                            </div>
+                            <h4>Choose Your Plan</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur blanditiis debitis
+                                saepe iste in.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-4 col-12">
+                        <div class="dark-feature-item">
+                            <div class="feature-cercle">
+                                3
+                            </div>
+                            <h4>Enjoy a Secure Life</h4>
+                            <p>Lorem ipsum dolor sit debitis saepe iste in, hic iusto commodi fuga. Rerum, fugit!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dark-counter">
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5  justify-content-center">
+                    <div class="col">
+                        <div class="counter-wrap">
+                            <h5> <span class="counter">1200</span> + </h5>
+                            <h6> Happy Clients </h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter-wrap">
+                            <h5> <span class="counter">3000</span> + </h5>
+                            <h6> Happy Customer </h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter-wrap">
+                            <h5> <span class="counter">1000</span> + </h5>
+                            <h6> Project </h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter-wrap">
+                            <h5> <span class="counter">100</span> + </h5>
+                            <h6> EMPLOYEES </h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="counter-wrap">
+                            <h5> <span class="counter">1200</span> + </h5>
+                            <h6> Happy Investors </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------- Dark Section End ---------->
+
+    <!-- Cost Calculator Section Start -->
+    <section>
+        <div class="cost">
+            <div class="container">
+                <div class="cost-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="cost-content-text">
+                                <h3>  Get an estimate_ </h3>
+                                <h2> Try our cost <br> calculator! </h2>
+                                <a href="costCalculator.html">
+                                    <button>Get Started</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="cost-display">
+                                <img src="./images/cost.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cost Calculator Section   End -->
+
+    <!---------- Common Section Start ---------->
+    <section>
+        <div class="feature">
+            <div class="container">
+                <div class="sec-header">
+                    <h6> Our Feature</h6>
+                    <h5>Explore With Us , We Serve To All</h5>
+                    <p>See our one and more services. And visit the demo link to see more skills and demo works.</p>
+                </div>
+                <div class="feature-wrapper">
+                    <div class="feature-item">
+                        <div class="row feature-item-row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="feature-content">
+                                    <h4> A short note about our organization. </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero inventore magnam
+                                        ipsum, eius expedita sunt itaque quo hic quis ab deserunt non accusantium
+                                        dolorum illo asperiores molestias dolor aliquid doloremque recusandae fugiat
+                                        temporibus quidem pariatur velit amet. Aperiam, incidunt maxime!</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique delectus
+                                        natus deserunt, in fugiat porro optio non quia voluptate praesentium.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-img">
+                                    <img src="./images/feature-1.jpg" alt="">
+                                    <div class="feature-shape">
+                                        <img src="./images/feature-shape.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row feature-item-row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="feature-content">
+                                    <h4> To boost your brand with the best IT agency </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero inventore magnam
+                                        ipsum, eius expedita sunt itaque quo hic quis ab deserunt non accusantium
+                                        dolorum illo asperiores molestias dolor aliquid doloremque recusandae fugiat
+                                        temporibus quidem pariatur velit amet. Aperiam, incidunt maxime!</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique delectus
+                                        natus deserunt, in fugiat porro optio non quia voluptate praesentium.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-img">
+                                    <img src="./images/feature-2.jpg" alt="">
+                                    <div class="feature-shape">
+                                        <img src="./images/feature-shape.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------- Common Section End ---------->
+
+    <!---------- Managing Director Section Start ---------->
+    <div class="director">
+        <div class="container">
+            <div class="director-wrapper">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 col-md-4 col-12">
+                        <div class="director-section-text">
+                            <h4> Massages from our honorable sir and mam </h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus labore dicta vel!
+                                Architecto adipisci consequatur non vel recusandae voluptates aspernatur ea assumenda
+                                sunt, distinctio doloremque at quidem corporis unde pariatur!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-4 col-12">
+                        <div class="director-wrap">
+                            <div class="member-img">
+                                <img src="./images/mamber-1.jpg" alt="">
+                                <div class="mamber-content">
+                                    <h5> A B M Kalam Khan </h5>
+                                    <h6> MD of Lemmesay Ltd. </h6>
+                                    <p> <span>"</span> It is with great pleasure and pride that I write this letter to
+                                        you as the. <span>"</span> </p>
+                                    <div class="mamber-social-links">
+                                        <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-4 col-12">
+                        <div class="director-wrap">
+                            <div class="member-img">
+                                <img src="./images/mamber-2.webp" alt="">
+                                <div class="mamber-content">
+                                    <h5> Aminul Islam </h5>
+                                    <h6> AMD of Lemmesay Ltd. </h6>
+                                    <p> <span>"</span> I write this letter to you as the CEO and founder of this IT
+                                        company and digital agency. <span>"</span> </p>
+                                    <div class="mamber-social-links">
+                                        <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-4 col-12">
+                        <div class="director-wrap">
+                            <div class="member-img">
+                                <img src="./images/mamber-3.webp" alt="">
+                                <div class="mamber-content">
+                                    <h5> Selina Mahmud </h5>
+                                    <h6> CEO of Lemmesay Ltd. </h6>
+                                    <p> <span>"</span> It is with great and founder of this IT company and digital
+                                        agency. <span>"</span> </p>
+                                    <div class="mamber-social-links">
+                                        <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-header mt-5">
+                <h6> Our Management</h6>
+                <h5>Have A Look To Our Management</h5>
+            </div>
+            <div class="managment-wrapper">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="managment-wrap">
+                            <div class="managment-profile">
+                                <img src="./images/mamber-1-bg.webp" alt="">
+                            </div>
+                            <h5> A B M Kalam Khan A B M Kalam Khan </h5>
+                            <h6> MD of Lemmesay Ltd. </h6>
+                            <div class="mamber-social-links">
+                                <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="managment-wrap">
+                            <div class="managment-profile">
+                                <img src="./images/mamber-2-bg.webp" alt="">
+                            </div>
+                            <h5> Aminul Islam </h5>
+                            <h6> AMD of Lemmesay Ltd. </h6>
+                            <div class="mamber-social-links">
+                                <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 col-12">
+                        <div class="managment-wrap">
+                            <div class="managment-profile">
+                                <img src="./images/mamber-3-bg.webp" alt="">
+                            </div>
+                            <h5> Selina Mahmud </h5>
+                            <h6> CEO of Lemmesay Ltd. </h6>
+                            <div class="mamber-social-links">
+                                <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------- Common Section End ---------->
+
+
+    <!---------- FAQ Section Start ---------->
+    <div class="faq">
+        <div class="container">
+            <div class="sec-header">
+                <!-- <h6> FAQ </h6> -->
+                <h5>Frequently Asked Questions</h5>
+                <p>See our one and more services. And visit the demo link to see more skills and demo works.</p>
+            </div>
+            <div class="faq-wrapper">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="faq-text">
+                            FAQ
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="faq-wrap">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faq-1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#faq-1-collaps" aria-expanded="true"
+                                            aria-controls="faq-1-collaps">
+                                            How can the clients contact Sherazi IT?
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq-1-collaps" class="accordion-collapse collapse show"
+                                        aria-labelledby="faq-1" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>We are always available to serve our valuable clients. Our call center is
+                                                always ready to respond to you. Our potential customers can contact us
+                                                by call, message, email, or social media. We are also ready to welcome
+                                                our customers to our office. Sherazi IT has a beautifully decorated
+                                                furnished office located at Uttara model town.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faq-2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-2-collaps"
+                                            aria-expanded="false" aria-controls="faq-2-collaps">
+                                            What kind of Services Sherazi IT does provide?
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq-2-collaps" class="accordion-collapse collapse" aria-labelledby="faq-2"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>POS Accounting Software(POS)</li>
+                                                <li>School Management Software(ERP)</li>
+                                                <li>Pharmacy Management Software</li>
+                                                <li>Office Management Software</li>
+                                                <li>HR & Payroll Software</li>
+                                                <li>ERP Software</li>
+                                                <li>Corporate Website</li>
+                                                <li>Ecommerce Website</li>
+                                                <li>Learning Management Website</li>
+                                                <li>Web Development</li>
+                                                <li>Website Speed & Security Optimization</li>
+                                                <li>SEO Service</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faq-3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-3-collaps"
+                                            aria-expanded="false" aria-controls="faq-3-collaps">
+                                            Does Sherazi IT provides their service in all countries?
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq-3-collaps" class="accordion-collapse collapse" aria-labelledby="faq-3"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Yes. Sherazi IT provides its service not only in Bangladesh but also in all
+                                            other counties. We have completed a lot of international client projects.
+                                            Many foreign clients worked with this IT company for branding their business
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faq-4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-4-collaps"
+                                            aria-expanded="false" aria-controls="faq-4-collaps">
+                                            What is the cost of Sherazi IT services?
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq-4-collaps" class="accordion-collapse collapse" aria-labelledby="faq-4"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            We have a monthly package, 15 days package, Project-based Contract, and
+                                            Partnership or commission-based Project, etc.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faq-5">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-5-collaps"
+                                            aria-expanded="false" aria-controls="faq-5-collaps">
+                                            Is digital platform can help to build a business?
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq-5-collaps" class="accordion-collapse collapse" aria-labelledby="faq-5"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Of course. This is the time of the digital world. A maximum of people are
+                                            gathering online. Now you can get more people rather than a physical
+                                            location. And everybody should do their marketing where more peoples are
+                                            available. For this reason, you can easily grow up your brand by presenting
+                                            on the digital platform.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------- FAQ Section End ---------->
+
+    <!---------- Client Review Start ----------->
+    <div class="client">
+        <div class="container">
+            <div class="sec-header">
+                <h6> Our Product</h6>
+                <h5>Explore Our Product , We Serve</h5>
+                <p>See our one and more services. And visit the demo link to see more skills and demo works.</p>
+            </div>
+        </div>
+        <div class="review_slider">
+            <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review_item">
+                            <div class="review_text">
+                                <span>"</span>
+                                Animi dolores rem exercitationem magnam, dolorem unde. Lorem ipsum dolor sit
+                                amet, consectetur adipisicing elit. Earum asperiores voluptates molestiae odio
+                                quo nulla modi sapiente autem laudantium consequatur.
+                                <span>"</span>
+                            </div>
+                            <div class="review_bottom">
+                                <div class="avatar_img">
+                                    <img src="./images/user1.webp" alt="">
+                                </div>
+                                <div class="user_info">
+                                    <h4>Rahul Mobarak</h4>
+                                    <h5>Jamuna Bank</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_item">
+                            <div class="review_text">
+                                <span>"</span>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi dolores rem
+                                exercitationem magnam, dolorem unde.
+                                <span>"</span>
+                            </div>
+                            <div class="review_bottom">
+                                <div class="avatar_img">
+                                    <img src="./images/user2.webp" alt="">
+                                </div>
+                                <div class="user_info">
+                                    <h4>Hasan Jamal Keli</h4>
+                                    <h5>Dhanmondi Dental</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_item">
+                            <div class="review_text">
+                                <span>"</span>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing amet consectetur adipisicing
+                                elit. Animi dolores rem exercitationem elit. Animi dolores rem exercitationem
+                                magnam, dolorem unde.
+                                <span>"</span>
+                            </div>
+                            <div class="review_bottom">
+                                <div class="avatar_img">
+                                    <img src="./images/user1.webp" alt="">
+                                </div>
+                                <div class="user_info">
+                                    <h4>Rashed Khan Kanna</h4>
+                                    <h5>Asian TV</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_item">
+                            <div class="review_text">
+                                <span>"</span>
+                                Lorem amet consectetur adipisicing elit. Animi dolores rem exercitationem
+                                magnam, dolorem unde.
+                                <span>"</span>
+                            </div>
+                            <div class="review_bottom">
+                                <div class="avatar_img">
+                                    <img src="./images/user1.webp" alt="">
+                                </div>
+                                <div class="user_info">
+                                    <h4>Fahim Ahmed</h4>
+                                    <h5>Lemmesay Ltd.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_item">
+                            <div class="review_text">
+                                <span>"</span>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi dolores rem
+                                exercitationem magnam, dolorem unde.
+                                <span>"</span>
+                            </div>
+                            <div class="review_bottom">
+                                <div class="avatar_img">
+                                    <img src="./images/user2.webp" alt="">
+                                </div>
+                                <div class="user_info">
+                                    <h4>Rahul Mobarak</h4>
+                                    <h5>Jamuna Bank</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------- Client Review   End ----------->
+
+
+    <!----------- Footer Section Start  ------------>
+    <footer class="footer" id="footer">
+        <div class="footer-main-content">
+            <div class="container">
+                <div class="footer-main-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-main-wrap">
+                                <h4>Contact</h4>
+                                <div class="wrap-content">
+                                    <div>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <span> House 39, Road 7D, Sector-9, Uttara, Dhaka-1230, Bangladesh</span>
+                                </div>
+                                <div class="wrap-content">
+                                    <div>
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#"> +88 01233237536 </a></li>
+                                        <li><a href="#"> +88 01233237546 </a></li>
+                                        <li><a href="#"> +88 01233237537 </a></li>
+                                    </ul>
+                                </div>
+                                <div class="pay-numbers">
+                                    <span> Marchent Number </span>
+                                    <div class="pay-number-item">
+                                        <img src="./images/bkash.png" alt="">
+                                    </div>
+                                    <div class="pay-number-item">
+                                        <img src="./images/nagad.png" alt="">
+                                    </div>
+                                    <div class="pay-number-item">
+                                        <img src="./images/rocket.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="footer-main-wrap">
+                                <h4>Important Links</h4>
+                                <ul>
+                                    <li><a href="#"> Home </a></li>
+                                    <li><a href="#"> About </a></li>
+                                    <li><a href="#"> Feature </a></li>
+                                    <li><a href="#"> Product </a></li>
+                                    <li><a href="#"> Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="footer-main-wrap">
+                                <h4> Our Product </h4>
+                                <ul>
+                                    <li><a href="#"> qrdrive.icircles.app </a></li>
+                                    <li><a href="#"> icircles.app </a></li>
+                                    <li><a href="#"> commuinity.icircles.app </a></li>
+                                    <li><a href="#"> ikannect.app</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                            <div class="footer-main-wrap">
+                                <h4>Others</h4>
+                                <div class="qr-img">
+                                    <img src="./images/qr.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <div class="footer-bottom-wrap">
+                        <div class="footer-img">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <div class="icon-list">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <h5>Copyright © 2024 All right reserved by <span>Lemmesay BD Ltd.</span> </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------- Footer Section End  ------------>
+
+
+    <!------- Back to Top Button --------->
+    <a id="button-back"></a>
+
+
+    <!--
+     Javascript Script Linker Part
+    --------------------------------------------------->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <script src="./js/venobox.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <script src="js/custom.js"></script>
+</body>

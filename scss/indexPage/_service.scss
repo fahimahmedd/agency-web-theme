@@ -1,0 +1,178 @@
+.sec-header{
+    text-align: center;
+    h6{
+        display: inline-block;
+        font-size: 13px;
+        line-height: 18px;
+        padding: 5px 20px 3px 20px;
+        border-radius: 35px;
+        background-color: #9fbffc49;
+        color: $primaryColor;
+        font-family: $secondaryFont;
+    }
+    h5{
+        font-family: $secondaryFont;
+        font-size: 28px;
+        color: $blackColor;
+        font-weight: 700;
+        line-height: 40px;
+        padding: 8px 0 2px 0;
+    }
+    p{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+.dark-sec-header{
+    text-align: center;
+    h5{
+        font-family: $secondaryFont;
+        font-size: 40px;
+        color: $whiteColor;
+        font-weight: 700;
+        line-height: 52px;
+        text-transform: uppercase;
+        padding: 8px 0 2px 0;
+    }
+    p{
+        color: #e5e5e5;
+        font-weight: 300;
+        font-size: 15px;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+}
+.service{
+    padding: 160px 0 80px 0;
+}
+.service-wrappeer{
+    max-width: 1320px;
+    margin: 50px auto 0;
+    border: 1px solid #e6e2e3;
+    border-radius: 16px;
+    padding: 0 2px;
+    position: relative;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .10);
+    overflow: hidden;
+    &::after{
+        position: absolute;
+        content: '';
+        height: .2px;
+        width: 100%;
+        background-color: #e6e2e3;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .service-wrap{
+        text-align: center;
+        padding: 20px;
+        height: 340px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .service-icon{
+            display: flex;
+            justify-content: center;
+             img{
+                max-height: 70px;
+                max-width: 70px;
+                object-fit: contain;
+             }
+        }
+        h4{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            color: $blackColor;
+            text-transform: uppercase;
+            padding-top: 20px;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+        p{
+            font-size: 15px;
+            line-height: 24px;
+            color: $textColor;
+            font-weight: 400;
+        }
+
+        .round-content{
+            height: 220px;
+            width: 220px;
+            background-color: #ecf1f6;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .number{
+                font-size: 40px;
+                color: $primaryColor;
+                font-weight: 700;
+                padding-top: 20px;
+                .counter{
+                    font-size: 62px;
+                }
+            }
+            h6{
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: 500;
+                color: $blackColor;
+                padding-top: 20px;
+            }
+        }
+    }
+    .service-color{
+        background-color: #4452e4;
+        h4{
+            color: $whiteColor;
+            font-size: 24px;
+            line-height: 36px;
+            font-family: $secondaryFont;
+            font-weight: 500;
+        }
+        .contact-btn{
+            padding: 7px 35px;
+            background-color: $secondaryColor;
+            font-size: 14px;
+            font-family: $secondaryFont;
+            border-radius: 35px;
+            color: $whiteColor;
+            margin-top: 10px;
+            cursor: pointer;
+            i{
+                margin-left: 3px;
+            }
+            &:hover{
+                background-color: $whiteColor;
+                color: $blackColor;
+            }
+        }
+    }
+    .service-col{
+        border-right: 1px solid #e6e2e3;
+        &:nth-child(4){
+            border-right: none;
+        }
+        &:nth-child(8){
+            border-right: none;
+        }
+        &:nth-child(12){
+            border-right: none;
+        }
+        &:nth-child(16){
+            border-right: none;
+        }
+        &:nth-child(20){
+            border-right: none;
+        }
+        
+    }
+}
+
+
+// Spech

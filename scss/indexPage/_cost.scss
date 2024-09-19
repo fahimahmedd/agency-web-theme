@@ -1,0 +1,157 @@
+.cost{
+    padding: 100px 0;
+    overflow: hidden;
+
+    .cost-content-text{
+        h3{
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 50px;
+            margin-bottom: 40px;
+        }
+        h2{
+            font-size: 50px;
+            font-weight: 900;
+            font-family: $secondaryFont;
+            text-transform: uppercase;
+            line-height: 65px;
+        }
+        button{
+            height: 45px;
+            padding: 0 50px;
+            border: 2px solid #000;
+            border-radius: 35px;
+            font-weight: 500;
+            font-size: 15px;
+            margin-top: 30px;
+            &:hover{
+                background-color: #f1f1f1;
+            }
+        }
+    }
+    .cost-display{
+        max-height: 600px;
+        width: 100%;
+    }
+}
+
+.cost-calculator{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+    .cost-calculator-wrapper{
+        h2{
+            font-size: 40px;
+            font-family: $secondaryFont;
+            color: $blackColor;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 1.3px;
+        }
+    }
+}
+
+.cost-question-action{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  button{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 35px;
+    background-color: #e9edf0e6;
+    border: 1px dashed #b5c2cc;
+    margin: 0 6px;
+    &:hover{
+        background-color: #e2e8ec;
+        border: 1px solid #b5c2cc;
+    }
+  }
+}
+
+.cost-calculator-bottom{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+
+    .action-item{
+        margin-left: 30px;
+        cursor: pointer;
+        font-size: 14px;
+        color: $textColor;
+        &:hover{
+            color: $blackColor;
+        }
+        i{
+            margin: 0 5px;
+        }
+        &:first-child{
+            border-right: 1px solid #2c2c2c;
+            padding-right: 30px;
+        }
+    }
+}
+
+.cost-calculator-form{
+    padding: 200px 0;
+    .cost-calculator-form-wrapper{
+        h2{
+            font-size: 40px;
+            font-family: $secondaryFont;
+            color: $blackColor;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 1.3px;
+        }
+        h4{
+            font-size: 18px;
+            font-family: $secondaryFont;
+            color: $blackColor;
+            text-align: center;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+        .sender-form{
+            width: 380px;
+            margin: 50px auto 0;
+            form{
+                .form-control{
+                    height: 52px;
+                    padding: 25px 10px 10px 10px!important;
+                    &:focus-visible{
+                        outline: 0;
+                        border: 1px solid $primaryColor;
+                        box-shadow: none;
+                    }
+                }
+                .form-floating>label {
+                    font-size: 13px;
+                    padding: 12px 10px;
+                }
+            }
+
+            .submit-btn{
+                height: 40px;
+                padding: 0 50px;
+                border-radius: 35px;
+                background-color: $primaryColor;
+                color: $whiteColor;
+                font-size: 14px;
+                &:hover{
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
