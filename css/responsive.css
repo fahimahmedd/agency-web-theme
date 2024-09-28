@@ -1,3 +1,271 @@
 @media (min-width: 280px) and (max-width: 991.98px){
-   
+    .dark-feature .dark-feature-wrapper .dark-feature-item .cercle-after::after {
+        display: none;
+    }
+    .cost .cost-content-text h3 {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    .cost .cost-content-text h2 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .cost .cost-display {
+        margin-top: 35px;
+    }
+    .cost {
+        padding: 80px 0 20px 0;
+    }
+    .cost-calculator .cost-calculator-wrapper h2 {
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 1.3px;
+    }
+    .cost-question-action button {
+        width: 150px;
+        height: 40px;
+        margin: 8px 6px;
+    }
+    .cost-calculator-form .cost-calculator-form-wrapper h2 {
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: 1.3px;
+    }
+    .cost-calculator-form .cost-calculator-form-wrapper h4 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .cost-calculator-form .cost-calculator-form-wrapper .sender-form {
+        width: 100%;
+    }
+    .cost-calculator-form {
+        padding: 120px 0;
+    }
+    .hero::before {
+       display: none;
+    }
+    .hero {
+        padding-top: 140px;
+    }
+    .hero .hero-wrapper .hero-content h1 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .hero .hero-wrapper .hero-content ul li {
+        font-size: 14px;
+    }
+    .hero .hero-wrapper .hero-img {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .hero .hero-wrapper .hero-img img {
+        object-fit: contain;
+    }
+    .dotes_anim_bloack .dotes_1 {
+        display: none;
+    }
+    .dotes_anim_bloack .dotes_5 {
+        display: none;
+    }
+    .dotes_anim_bloack .dotes_4{
+       display: none;
+    }
+    .dotes_anim_bloack .dotes_2 {
+       display: none;
+    }
+    .service {
+        padding: 100px 0 80px 0;
+    }
+    .service-wrappeer {
+        max-width: 1320px;
+        margin: 50px auto 0;
+        border: 1px solid #e6e2e3;
+        padding: 0 2px;
+        box-shadow: none;
+    }
+    .service-wrappeer .service-wrap {
+        height: auto;
+    }
+    .sec-header h5{
+        font-size: 22px;
+        line-height: 34px;
+        padding: 8px 0 2px 0;
+    }
+    .product {
+        padding: 30px 0;
+    }
+    .product-wrap {
+        height: auto;
+        width: 100%;
+        padding: 30px 20px;
+        margin-bottom: 24px;
+    }
+    .product-wrap .demo-btn {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    .dark-sec-header h5 {
+        font-size: 24px;
+        line-height: 40px;
+        padding: 8px 0 2px 0;
+    }
+    .dark-feature .dark-feature-wrapper .dark-feature-item {
+       margin-bottom: 30px;
+    }
+    .service-wrappeer::after {
+        display: none;
+    }
+    .dark-feature .dark-counter .counter-wrap {
+        margin-top: 40px;
+    }
+    .dark-feature .dark-counter {
+        padding-top: 20px;
+    }
+    .dark-feature .dark-counter .counter-wrap h5 span {
+        font-size: 40px;
+    }
+    .feature-item .row .feature-content h4 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .feature-item .row .feature-img {
+        margin-top: 80px;
+    }
+    .feature-item .row:first-child {
+        padding-top: 40px;
+    }
+    .feature-item .row {
+        padding-top: 40px;
+    }
+    .director {
+        background-color: #fffdf3;
+        padding: 60px 0 60px 0;
+        margin: 0px 0 0 0;
+    }
+    .director .director-wrapper .director-section-text h4 {
+        font-size: 30px;
+        line-height: 48px;
+    }
+    .director .director-wrapper .director-wrap .member-img .mamber-content {
+        height: auto;
+        width: auto;
+        position: relative;
+        left: inherit;
+        top: inherit;
+        transform: translateY(-50%);
+        box-shadow: rgba(0,0,0,.09) 0px 3px 12px;
+    }
+    .director .director-wrapper .director-wrap {
+        margin-bottom: 160px;
+    }
+    .director .director-wrapper .director-wrap .member-img {
+        height: 320px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .managment-wrapper .managment-wrap {
+        height: 365px;
+        width: 280px;
+        border-radius: 18px;
+        position: relative;
+        margin: 0 auto 20px;
+    }
+    .faq .faq-wrapper .faq-text {
+       display: none;
+    }
+    .faq .faq-wrapper .faq-wrap {
+        padding-left: 0px;
+    }
+    .footer .footer-main-content {
+        padding: 20px 0 60px 0;
+    }
+    .footer .footer-main-content .footer-main-wrapper .footer-main-wrap h4 {
+        padding-bottom: 10px;
+        padding-top: 40px;
+    }
+    .common-hero {
+        padding: 120px 0 0 0;
+    }
+    .faq .faq-wrapper .faq-wrap .accordion-header .accordion-button {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .faq .faq-wrapper .faq-wrap .accordion-header .accordion-button:not(.collapsed) {
+        font-size: 18px;
+    }
+    .contact_wrapper .contect_info .form_wrapper {
+        margin-top: 30px;
+    }
+    .accordion-button {
+        padding: 1rem .5rem;
+    }
+    .service-wrappeer .service-color {
+        height: 100%;
+    }
+}
+
+
+@media (min-width: 750px) and (max-width: 991.98px){
+    .product-wrap h4 {
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 10px;
+    }
+    .dark-feature .dark-feature-wrapper .dark-feature-item h4 {
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 15px;
+        text-transform: uppercase;
+    }
+    .managment-wrapper .managment-wrap {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+    .managment-wrapper .managment-wrap h5 {
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 12px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1191.98px){
+    .hero .hero-wrapper .hero-content h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .service-wrappeer .service-wrap h4 {
+        font-size: 17px;
+        line-height: 26px;
+        padding-top: 20px;
+    }
+    .service-wrappeer .service-color h4 {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .product-wrap h4 {
+        font-size: 18px;
+        line-height: 28px;
+        padding-top: 10px;
+    }
+    .dark-feature .dark-counter .counter-wrap h5 span {
+        font-size: 40px;
+    }
+    .director .director-wrapper .director-wrap .member-img .mamber-content {
+        left: 190px;
+    }
+    .managment-wrapper .managment-wrap h5 {
+        font-size: 16px;
+    }
+    .faq .faq-wrapper .faq-text {
+        font-size: 140px;
+        left: 125px;
+    }
 }
